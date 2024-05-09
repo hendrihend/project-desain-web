@@ -1,0 +1,543 @@
+body {
+	/*background-color: #5B264E;
+	background-image: linear-gradient(to left, #AE6C66, #5B264E);*/
+	background-image: url(../img/Kebuntehciater.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+.container {
+	display: grid;
+	grid-template-columns: 100%;
+	padding: 1em 1.5em;
+}
+.gradient {
+	/*background-image: linear-gradient(to left, #AE6C66, #5B264E);*/
+}
+/*awal logo*/
+.rowlog {
+	width: 95%;
+	margin-left: 5%;
+}
+.img_benteng {
+	width: 30%;
+	margin-right: 50%;
+}
+.img_logo {
+	width: 20%;
+	/*margin-right: 5%;*/
+}
+.collog1 {
+	width: 30%;
+	float: left;
+}
+.collog2 {
+	width: 70%;
+	float: right;
+}
+ul {
+	list-style: none;
+	position: relative;
+}
+.h1 {
+	color: #000;
+	font-family: matura mt script capitals;
+}
+/*akhir logo*/
+/*awal bagian nav*/
+.topnav {
+  opacity: 0.5;
+  background-color: #000;
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 95%;
+  margin-left: 5%;
+  text-transform: uppercase;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+/* Change the color of links on hover */
+.topnav .active2:hover {
+	background-color: red;
+}
+.topnav a:hover {
+  background-color: #AE6C66;
+  color: black;
+  transform: rotate(20deg);
+  transform: translate(15px, -2.5px);
+  transition:1s, cubic-bezier(1,1,1,1);
+  cursor: pointer;
+}
+/* Add an active class to highlight the current page */
+.active {
+  background-color: #AE6C66;
+  color: white;
+}
+.active2 {
+	background-color: red;
+	float: right;
+}
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+/*======================================akhir bagian nav*/
+/*======================================awal header*/
+.header {
+	width: 95%;
+	height: 500px;
+	margin-left: 5%;
+	-webkit-animation-name: example;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-delay: 2s;
+	animation-iteration-count: infinite;
+	animation-name: example;
+	animation-duration: 5s;
+	transition:1s, cubic-bezier(1,1,1,1);
+	background-image: url(../img/bg/bg4.jpeg);
+	background-size: cover;
+	background-attachment: fixed;
+	/*background-image: linear-gradient(to left bottom, #fedcba, #AE6C66);*/
+}
+/*@-webkit-keyframes example {
+	from {background-image: url(../img/bg/Kebuntehciater.jpg);}
+	to {background-image: url(../img/bg/kebunteh.jpg);}
+}
+@keyframes example {
+	from {background-image: url(../img/bg/Kebuntehciater.jpg);}
+	to {background-image: url(../img/bg/kebunteh.jpg);}
+}*/
+.h1_header {
+	transform: rotate(15deg);
+	transform-origin: top 0;
+	text-transform: uppercase;
+	margin: 4%;
+}
+.colhead1 {
+	width: 65%;
+	float: left;
+	margin-left: 5%;
+	align-self: center;
+}
+.colhead2 {
+	width: 30%;
+	float: right;
+}
+/*==============================================akhir header*/
+/*==============================================awal about*/
+.about {
+	width: 95%;
+	margin-left: 5%;
+	/*background-color: #AE6C66;*/
+	margin-top: 5px;
+	background-image: linear-gradient(to left bottom, #fedcba, #AE6C66);
+}
+/** {
+	box-sizing: border-box;
+}*/
+h1 {
+	text-align: center;
+}
+h1 a {
+	text-align: center;
+	color: blue;
+}
+hr {
+	width: 10%;
+	margin: auto;
+	color: #000000;
+}
+.p_info, a {
+	color: #000;
+	text-align: center;
+}
+.p_info, a:hover {
+	color: #fedcba;
+}
+.col2_about {
+	text-transform: uppercase;
+}
+.col2_about ,.p_info:hover {
+	-webkit-:mymove 3s infinite;
+	animation: mymove 3s;
+	-webkit-transition: 1s, cubic-bezier(1,1,1,1);
+	-moz-transition: 1s, cubic-bezier(1,1,1,1);
+	-ms-transition: 1s, cubic-bezier(1,1,1,1);
+	transition:1s, cubic-bezier(1,1,1,1);
+}
+@-webkit-keyframes mymove {
+  from {background-color: #AE6C66;}
+  to {background-color: #022634;}
+  
+}
+/* Standard syntax */
+@keyframes mymove {
+  from {background-color: #AE6C66;}
+  to {background-color: #022634;}
+}
+/*akhir about*/
+/*.sidebar2 {
+    background-color: #022634 ;
+	width: 20%;
+	height: 300px;
+	float: right;
+	margin-right: 1%;
+}*/
+/*===========================================awal wisata=============================*/
+.wisata {
+	width: 95%;
+	margin-left: 5%;
+	background-color: #AE6C66;
+	background-image: linear-gradient(to left bottom, #fedcba, #AE6C66);
+	margin-top: 5px;
+}
+
+.rowwisata2 {
+	width: 40%;
+	margin: auto;
+}
+a {
+	text-decoration: none;
+}
+.colwisata1 {
+	width: 45%;
+	float: left;
+	margin: 1%;
+	background-color: #AE6C66;
+}
+.colwisata2 {
+	width: 45%;
+	float: right;
+	margin: 1%;
+	background-color: #AE6C66;
+}
+.colwisata1:hover {
+	-webkit-:mymove 3s infinite;
+	color: #fedcba;
+	background-color:  #022634;
+	transition: 1s;
+	
+}
+.colwisata2:hover {
+	-webkit-:mymove 3s infinite;
+	background-color:  #022634;
+	color: #fedcba;
+	transition:1s;
+}
+@-webkit-keyframes mymove {
+  from {background-color: #AE6C66;}
+  to {background-color: #022634;}
+  
+}
+.colmore {
+	width: 100%;
+}
+/*animasi link more*/
+.animasimore {
+	font-family: forte;
+}
+.animasimore {
+    -webkit-animation: myanimasi 0.5s infinite;
+	animation: myanimasi 0.5s infinite;
+  }
+  @-webkit-keyframes myanimasi{
+	100% {text-indent: 20%};
+  }
+/*==========================================akhir wisata=====================*/
+h2 {
+	text-align: center;
+	font-family: forte;
+}
+h3 {
+	margin-right: 3%;
+	margin-left: 3%;
+}
+/*awal text p*/
+.text_p {
+	text-indent: 5%;
+	margin-left: 1%;
+	margin-right: 1%;
+	text-align: justify;
+}
+/*akhir text p*/
+/*=======================awal gabungan wisata&budaya======================*/
+img {
+	width: 100%;
+}
+.img_wisata {
+	width: 98%;
+	margin: 1%;
+	box-shadow: 4px 4px 8px #000;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+.img_wisata:hover {
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+.img_budaya {
+	width: 98%;
+	margin: 1%;
+	box-shadow: 4px 4px 8px #000;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+.img_budaya:hover {
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+/*===================akhir gabungan wisata&budaya=====================*/
+/*==============================awal budaya===========================*/
+.budaya {
+	width: 95%;
+	margin-left: 5%;
+	background-color: #AE6C66;
+	background-image: linear-gradient(to left bottom, #fedcba, #AE6C66);
+	margin-top: 5px;
+}
+
+.rowbudaya2 {
+	width: 40%;
+	margin: auto;
+}
+.colbudaya1 {
+	width: 45%;
+	float: left;
+	margin: 1%;
+	background-color: #AE6C66;
+}
+.colbudaya2 {
+	width: 45%;
+	float: right;
+	margin: 1%;
+	background-color: #AE6C66;
+}
+.colbudaya1:hover {
+	-webkit-:mymove 3s infinite;
+	color: #fedcba;
+	background-color:  #022634;
+	transition: 1s;
+}
+.colbudaya2:hover {
+	-webkit-:mymove 3s infinite;
+	color: #fedcba;
+	background-color:  #022634;
+	transition: 1s;
+}
+@-webkit-keyframes mymove {
+  from {background-color: #AE6C66;}
+  to {background-color: #022634;}  
+}
+/*================================akhir budaya========================*/
+/*======================awal contact==================================*/
+.contact {
+	width: 95%;
+	min-height: 300px;
+	margin-left: 5%;
+	background-color: #AE6C66;
+	background-image: linear-gradient(to left bottom, #fedcba, #AE6C66);
+	margin-top: 5px;
+}
+.img_sosmed {
+	width: 18%;
+	border-radius: 50%;
+
+}
+.img_sosmed:hover {
+	transform: rotate(20deg);
+	transform: translate(15px, -2.5px);
+	transition:1s, cubic-bezier(1,1,1,1);
+	cursor: pointer;
+}
+hr {
+	margin-bottom: 20px;
+}
+.colc1 {
+	width: 100%;
+	margin-top: 30px;
+}
+.colc2 {
+	width: 100%;
+	margin-top: 30px;
+	text-align: center;
+}
+.colc3 {
+	width: 100%;
+	margin-top: 30px;
+	text-align: center;
+}
+.colc1:hover {
+	-webkit-:mymove 3s infinite;
+	color: #fedcba;
+	background-color:  #022634;
+	transition: 1s;
+}
+.colc2:hover {
+	-webkit-:mymove 3s infinite;
+	color: #fedcba;
+	background-color:  #022634;
+	transition: 1s;
+}
+.colc3:hover {
+	-webkit-:mymove 3s infinite;
+	color: #fedcba;
+	background-color:  #022634;
+	transition: 1s;
+}
+/*awal form*/
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+div {
+  border-radius: 5px;
+  /*background-color: #f2f2f2;*/
+  /*padding: 20px;*/
+}
+textarea {
+	width: 100%;
+	height: 100px;
+	padding: 12px 20px;
+	box-sizing: border-box;
+    border: 1px solid #ccc;
+	border-radius: 4px;
+	resize: none;
+}
+/*akhir form*/
+.wayang {
+	width: 10%;
+	float: right;
+	margin-right: 5%;
+}
+.wayang:hover {
+	transform: translate(50px, 50px);
+	transform: rotate(-20deg);
+	transition:1s, cubic-bezier(1,1,1,1);
+}
+/*===================================akhir contact=====================*/
+/*  SECTIONS  */
+.section {
+	/*border: 3px double #000;*/
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col:hover {
+	font-size: 20px;
+	transition:1s, cubic-bezier(1,1,1,1);
+	cursor: pointer;
+}
+.col {
+	display: block;
+	float: right;
+	margin: 2% 3% 1%;
+}
+.col:first-child { margin-left: 0; }
+
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+	content:"";
+	display:table;
+}
+.group:after {
+	clear:both;
+}
+.group {
+	zoom:1; /* For IE 6/7 */
+}
+
+/*  GRID OF THREE  */
+.span_3_of_3 {
+	width: 100%;
+}
+.span_1_of_2 {
+	width: 45%;
+}
+.span_1_of_2 {
+	width: 45%;
+}
+.span_1_of_3, .colc1 {
+	width: 25%;
+}
+.span_1_of_3, .colc2 {
+	width: 25%;
+}
+.span_1_of_3, .colc3 {
+	width: 25%;
+}
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col { margin: 1% 0 1% 0%;}
+	.span_3_of_3, .span_1_of_2, .span_1_of_3 { width: 100%; }
+}
+footer {
+	text-align: center;
+	color: white;
+	background-color: #000000;
+	width: 95%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	position: relative;
+	display: inline-table;
+	margin-left: 5%;
+	opacity: 0.5;
+	font-family: forte;
+}
